@@ -1,15 +1,19 @@
 # Enable-AzureRMDiagnosticsToOMS
 Enabling Azure Diagnostic items in resource group to Log Analytics/OMS. There is also version for Azure Automation.
 
-
-
 # Enabling
 Network Security Groups
+
 Virtual Machines
+
 Network Interfaces
+
 Virtual Networks
+
 Databases
+
 Elasticpools
+
 Key Vaults
 
 
