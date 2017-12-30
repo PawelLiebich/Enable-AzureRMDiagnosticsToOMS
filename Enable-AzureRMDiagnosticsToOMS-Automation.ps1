@@ -12,7 +12,7 @@ $ResourceGroup = Get-AutomationVariable -Name 'ResourceGroup'
 ########################################
 $WSID = ("/subscriptions/" + $OPSSubscriptionId + "/resourceGroups/" + $OPSResourceGroup + "/providers/Microsoft.OperationalInsights/workspaces/" + $OPSName)
 Set-AzureRmContext -SubscriptionId $SubscriptionId
-[array]$ResourceTypes = "Microsoft.Network/networkSecurityGroups", "Microsoft.Compute/virtualMachines", "Microsoft.Network/networkInterfaces", "Microsoft.KeyVault/vaultsMicrosoft.Sql/servers", "Microsoft.Network/virtualNetworks", "microsoft.sql/servers/databases", "Microsoft.Sql/servers/elasticpools", "Microsoft.KeyVault/vaults"
+[array]$ResourceTypes = "Microsoft.Network/networkSecurityGroups", "Microsoft.Compute/virtualMachines", "Microsoft.Network/networkInterfaces", "Microsoft.Network/virtualNetworks", "microsoft.sql/servers/databases", "Microsoft.Sql/servers/elasticpools", "Microsoft.KeyVault/vaults"
 ###########################################################
 Write-Output "Adding to OMS:" $OPSName
 foreach ($ResourceType in $ResourceTypes)
